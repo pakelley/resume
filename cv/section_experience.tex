@@ -1,0 +1,60 @@
+\sectionTitle{Professional Experience}{\faSuitcase}
+%\renewcommand{\labelitemi}{$\bullet$}
+\begin{experiences}
+  \experience
+    {Present}   {Twitter}{Machine Learning Engineer} {Remote}
+    {April 2022}
+    {
+      \begin{itemize}
+        \item Prevent additional 30k inauthentic signups/day by by retraining inauthentic account classifier. Automate retraining to periodically refresh model.
+        \item Improve observability/maintainability of inauthentic account classifier by migrating from on-prem to Dataflow
+        \item Quantify impact of future project that would increase detection of inauthentic accounts by 50%
+        \item Improve observability of account remediation systems and enforce quality standards by implementing monitoring system
+      \end{itemize}
+    }
+    {\vertex,\dataflow,\tf,\airflow,\scalding,\bazel}
+  \emptySeparator
+
+  \experience
+    {April 2022}   {Bombora}{Senior Machine Learning Engineer} {Remote}
+    {April 2021}
+    {
+      \begin{itemize}
+        \item Reduce 80\% of engineering intervention in topic classifier retraining by refactoring training pipeline
+        \item Improve observability of topic classification model by automating model evaluation
+        \item Improve long-term model reliability by delivering PoC and migration plan  for using kubeflow/Vertex AI to train/serve models
+        \item Improve team throughput by onboarding and mentoring 7 new engineers (doubling the team size) after a funding round
+      \end{itemize}
+    }
+    {\mlflow,\pytorch,\spacy,\kubeflow,\gke,\airflow}
+  \emptySeparator
+
+  \experience
+    {April 2021}   {Bombora}{Machine Learning Engineer} {Reno, NV/Remote}
+    {January 2019}
+    {
+      \begin{itemize}
+        \item Remove 85M  non-business-related IPs/month from B2B intent analysis using IP behavior based spark.ml classifier
+        \item Increase company resolution (from IP addresses) by 200\% using IP behavior based spark.ml classifier
+        \item Reduce model deployment time by 75\% by building model development lifecycle tooling/standards
+        \item Improve accuracy of topic classification (used to determine B2B interest in topics) by 20\% by migrating legacy NLP classifier (fasttext) to BERT-based model (PyTorch/spaCy/huggingface)
+        \item Improve observability of model performance by setting up model store/dashboard (mlflow)
+        \item  Build labeling system (using Heartex) to improve labels for content-type model, resulting in 20\% better accuracy. Labelling tool was utilized by multiple teams for other models.
+      \end{itemize}
+    }
+    {\spark,\pubsub,\mlflow,\gke,\pytorch,\spacy,\huggingface,\heartex,\airflow,\dask}
+  \emptySeparator
+
+  \experience
+    {January 2019} {Bombora}{Data Engineer}{Reno, NV}
+    {June 2017}
+    {
+      \begin{itemize}
+        \item Improved accuracy of content extraction (used for topic classification of web content) by migrating to a ML library (dragnet) (ported to Python 3)
+        \item Filter Prevent web requests to 9.5M URLs/month not meant to be requested (as specified in their robots.txt) using a GKE-based url filtering application
+        \item Refactor/optimize spark-based analytics pipeline, reducing job failures 50\% and runtime by 75\%
+        \item Increase developer velocity by building internal tooling (for automatic documentation builds (Sphinx), Python packaging, and GCP workflows
+      \end{itemize}
+    }
+    {\spark,\sphinx,\gke,\sklearn}
+\end{experiences}
